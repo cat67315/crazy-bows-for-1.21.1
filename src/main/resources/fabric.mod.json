@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "crazy-bows",
+	"version": "${version}",
+	"name": "Crazy bows",
+	"description": "A mod that adds dispenser functionality to bows",
+	"authors": [
+		"cat67315"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/crazy-bows/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cat67315.crazybows.CrazyBows"
+		],
+		"fabric-datagen": [
+			"cat67315.crazybows.CrazyBowsDataGenerator"
+		],
+		"client": [
+		"cat67315.crazybows.CrazybowsClient"
+		]
+	},
+	"mixins": [
+		"crazy-bows.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
